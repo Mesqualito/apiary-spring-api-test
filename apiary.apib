@@ -11,10 +11,6 @@ Special thanks for explaining Cross Origin Resource Sharing to: https://web.dev/
 Retrieve from Mock-Server: e.g. https://private-e426b4-hool.apiary-mock.com/hool/user
 
 
-Api factory gives us access to random data in different contexts and
-for different sort of contentes. For instance: user profiles or posts
-published in a blog.
-
 # Group Users
 
 You can retrieve random profile of users with different kind of data like
@@ -23,10 +19,19 @@ the user is using.
 
 ## Users Collection [/user{?limit}]
 
+see:
+https://github.com/apiaryio/api-blueprint/blob/master/API%20Blueprint%20Specification.md#example-10
+
+and:
+https://github.com/springframeworkguru/spring-rest-client-examples/issues/6
+
+as well as:
+https://stackoverflow.com/questions/31509158/apiary-limiting-a-response-return
+
 ### List of users [GET]
 
 + Parameters
-    + limit (number) - Specified the number of rows to retrieve.
+    + limit (optional, number) - maximal number of users to retrieve.
 
 + Response 200 (application/json)
 
